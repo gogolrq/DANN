@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH -J adult
+#SBATCH -p general 
+#SBATCH -o ./report/report_%j.txt
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=02:00:00
+
+cd /N/u/liuruiq/BigRed3/DKNN/adult
+
+module load r
+
+RandomSeed=$1
+
+for g in 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9
+do
+  Rscript ./prandom.R $g $RandomSeed;
+done
