@@ -1,2 +1,2 @@
-# DANN
- Distributed Adaptive KNN
+# DANN 
+ Distributed Adaptive Nearest Neighbor Algorithm
