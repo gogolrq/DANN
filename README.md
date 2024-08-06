@@ -1,2 +1,1 @@
-# DANN 
- Distributed Adaptive Nearest Neighbor Algorithm
+# Code for "Distributed Adaptive Nearest Neighbor Classifier: Algorithm and Theory"
